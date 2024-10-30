@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HomePage</title>
+    <script src="https://use.fontawesome.com/ac4472d01b.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/hamberger.css" />
+    <link rel="stylesheet" href="css/todo.css"/>
+    <link rel="stylesheet" href="css/sub.css"/>
+    <link rel="stylesheet" href="css/mainClock.css"/>
+  </head>
+
+  <body>
+    <nav id="sub-info">
+        <span id="weather">
+          <span></span>
+          <span></span>
+        </span>
+        <span id="clock">00:00:00</span>
+        <a href="#login-form"><i class="fa fa-undo fa-2x" aria-hidden="true" style="display:none" ></i></a>
+      </nav>
+
+    <header id="login-form"> 
+      <h1>
+        Hello
+        <i id="myName">Stranger<i class="font-roboto">.</i></i>
+      </h1>
+
+      <form id="input">
+        <input type="text" id="inputValue" placeholder="Who Are You" />
+        <div><input type="submit" id="inputBtn" value="Enter" /></div>
+
+        <div id="inputBtn2" style="display: none;">
+          <div class="row cf">
+            <div class="three col">
+              <div class="hamburger" id="hamburger-3">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+            </div>
+            <div class="three col">
+              <div class="hamburger" id="hamburger-4">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+            </div>
+
+            <div class="three col">
+              <div class="hamburger" id="hamburger-5">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+            </div>
+            <div class="three col">
+              <div class="hamburger" id="hamburger-6">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </header> 
+
+    <main id="main-form">
+      <section id="main-form-left">
+          <header>
+              <h2 id="greeting">
+                  <i class="transparent">Hello<i class="font-roboto">,</i></i></br>
+                  <span id="saved-username"></span>
+              </h2>
+              <p id="quotes"></p>
+          </header>
+          <div id="task-progress" class="glassmorphism">
+              <h3 class="sub-title">Task progress</h3>
+              <ul id="progress-bar">
+                  <li>
+                      <span>Today</span>
+                      <span class="text-align">80%</span>
+                      <div class="bar bar-t"></div>
+                      <div class="bar2 bar-t2"></div>
+                  </li>
+                  <li>
+                      <span>Weekly</span>
+                      <span class="text-align">80%</span>
+                      <div class="bar bar-w"></div>
+                      <div class="bar2 bar-w2"></div>
+                  </li>
+                  <li>
+                      <span>Monthly</span>
+                      <span class="text-align">80%</span>
+                      <div class="bar bar-m"></div>
+                      <div class="bar2 bar-m2"></div>
+                  </li>
+              </ul>
+          </div>
+      </section>
+      <section id="main-form-right" class="glassmorphism">
+          <div>
+              <h3 class="sub-title">Today</h3>
+              <div class="box-style">
+                  <form class="todo-form">
+                  <input class="todo-input" type="text">
+                  </form>
+                  <ul class="todo-list"></ul>
+              </div>
+          </div>
+          <div class="small-box">
+                  <h3 class="sub-title">Weekly</h3>
+                  <div class="box-style">
+                      <form class="todo-form">
+                      <input class="todo-input" type="text">
+                      </form>
+                      <ul class="todo-list"></ul>
+                  </div>
+                  <h3 class="sub-title">Monthly</h3>
+                  <div class="box-style">
+                      <form class="todo-form">
+                      <input class="todo-input" type="text">
+                      </form>
+                      <ul class="todo-list"></ul>
+                  </div>
+          </div>
+      </section>
+    </main>
+
+    <div id="main-clock">
+      <div id="main-clock-left">
+
+      </div>
+      <div id="main-clock-right-top">
+
+        <div id="boxes">
+          <div id="boxTable">
+            <div class="boxTable1">0</div>
+            <div class="boxTable2">0</div>
+            <div class="boxTable3">0</div>
+            <div class="boxTable4">0</div>
+            <div class="boxTable5">0</div>
+          </div>
+          
+          <div id="listTable">
+            <ul id="list">
+              <li tabindex="0" id="Min1">20</li>
+              <li tabindex="0" id="Min2">30</li>
+            </ul>
+            <ul id="list">
+              <li tabindex="0" id="Min3">45</li>
+              <li tabindex="0" id="Min4">60</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timer-container">
+          <div id="timer" class="timer">
+              <div class="cover1"></div>
+              <div id="lines">
+              </div>
+              <div id="fins">
+              </div>
+              <div id="num-container">
+              </div>
+              <div class="cover2">
+                <button type="button" class="btn neumorphic-btn neumorphic-checkbox"></button>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+      <div id="main-clock-right-bottom">
+        <div id="MCRBText">You've Studied for 0 minutes</div>
+        <div>
+          <ul>
+            <li class="menu">
+              <i class="fa fa-caret-down" aria-hidden="true" ></i>
+              <ul class="hideList" style="display:none">
+                <li id=firstList>Today</li>
+                <li id=secondList>This Month</li>
+                <li id=thirdList>This Month</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="whileGoClock""></div>
+ 
+  <script src="Js/background.js"></script>
+  <script src="Js/login.js"></script>
+  <script src="Js/clock.js"></script>
+  <script src="Js/weather.js"></script>
+  <script src="Js/hamberger.js"></script>
+  <script src="Js/todo.js"></script>
+  <script src="Js/randomQuote.js"></script>
+  <script src="Js/mainClock.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+    <link href="./capital_game.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
+    <title>Capital Game!</title>
+  </head>
+  <body>
+    <h1>Do you know the capital of this country?</h1>
+    <table id="tbl">
+      <th><strong>Country</strong></th>
+      <th><strong>Capital</strong></th>
+      <th><strong>Answer</strong></th>
+      <th> </th>
+      <tr>
+        <td id="pr2__question"></td>
+        <td><input type="text" id="pr2__answer" autofocus></td>
+        <td><input type="button" value="See Answer" id="pr2__submit"></td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="All"><input type="radio" id="All" name="abc" checked onclick="AllFunc();">All</label>
+          <label for="Cor"><input type="radio" id="Cor" name="abc" onclick="CorFunc();">Correct Only</label>
+        </td>
+        <td>
+          <label for="Wro"><input type="radio" id="Wro" name="abc" onclick="WroFunc();">Wrong Only</label>
+        <td>
+        <td>
+          <label></label>
+        <td>
+        </tr>
+      </tr>
+    </table>
+
+    <script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="./country_capital_pairs.js"></script>
+    <script src="./capital_game.js"></script>
+  </body>
+</html>

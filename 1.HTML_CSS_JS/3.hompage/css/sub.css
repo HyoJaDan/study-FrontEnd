@@ -1,0 +1,78 @@
+#clock {
+  font-weight: 700;
+  font-size: var(--font-size);
+  padding-right: 15px;
+  font-family: "Noto Sans KR", sans-serif;
+  z-index: 100;
+}
+#weather {
+  font-weight: 700;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: var(--font-size);
+  padding-right: 15px;
+  z-index: 100;
+}
+#sub-info:before {
+  width: 50px;
+  margin-right: 10px;
+  content: "";
+  border-bottom: 3.3px solid #1c1b1b;
+  font-family: "Noto Sans KR", sans-serif;
+  z-index: 100;
+}
+#sub-info {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-top: 15px;
+  z-index: 100;
+}
+
+.fa-undo {
+  color: white;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+.abc {
+  display: none;
+}
+.fa-undo:hover {
+  curser: pointer;
+  color: #6495ed;
+}
+
+.fade-in {
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-outAndFa-spin {
+  animation-name: fadeout;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+    color: #7b68ee;
+  }
+  60% {
+    color: #b2a8ed;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(359deg);
+    color: white;
+  }
+}

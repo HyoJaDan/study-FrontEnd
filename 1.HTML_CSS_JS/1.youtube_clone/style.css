@@ -1,0 +1,238 @@
+:root{
+  /*color*/
+  --white-color:white;
+  --black-color:black;
+  --blue-color:#045fd4;
+  --red-color:#ff0000;
+  --grey-dark-color:#909090;
+  --grey-light-color:#e0e0e0;
+
+  /*Size*/
+  --side-padding:12px;
+  --avatar-size:36px;
+
+  /*Font Size*/
+  --font-large:18px;
+  --font-medium:14px;
+  --font-small:12px;
+  --font-micro:10px;
+}
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+body{
+  font-family:Roboto;
+}
+li{
+  list-style:none;
+}
+button,
+button:focus{
+  border:none;
+  background:none;
+  cursor: pointer;
+  outline:none;
+}
+
+header{
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+  background-color:var(--black-color);
+  margin:var(--side-padding);
+  height:6vh;
+  align-items:center;
+  margin-bottom:0px;
+}
+header .head1{
+  font-size:var(--font-large);
+}
+header .head2 .fa-search{
+  margin-right:var(--side-padding);
+}
+.head1, .head2{
+  list-style:none;
+  display: flex;
+}
+.YoutubeSty{
+   text-decoration:none;
+   padding-left:5px;
+}
+
+.video {
+    position: relative; 
+    padding-bottom: 56.25%;
+    height:0; 
+    overflow:hidden; 
+}
+.video iframe,
+.video object,
+.video embed { 
+    position: absolute; 
+    top: 0; 
+    left:0;
+    width: 100%; 
+    height:100%; 
+}
+iframe{
+  padding-left:var(--side-padding);
+  padding-right:var(--side-padding);
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+main{
+  display: flex;
+  flex-direction:column;
+  margin:var(--side-padding);
+}
+main .main1{
+  padding-bottom:var(--side-padding);
+  color:var(--blue-color);
+  font-size:var(--font-small);
+}
+main .main2{
+  position:relative;
+  display:flex;
+}
+main .main2 span{
+  position:absolute;
+  right:0px;
+  font-size:var(--font-large);
+  color:var(--grey-dark-color);
+}
+main .main2 li{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-right:var(--side-padding);
+}
+main .main2 .moreBtn{
+  height:100%;
+}
+
+main .main3{
+  font-size:var(--font-small);
+  color:var(--grey-dark-color);
+}
+
+main .main4 .icons{ 
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+  border-bottom:1px solid black;
+  font-size:var(--font-large);
+  padding:var(--avatar-size);
+}
+
+main .main4 .fa{
+  display: flex;
+  flex-direction:column;
+  text-align:center;
+  padding-bottom:5px;
+}
+main .main4 a{
+  text-decoration:none;
+   color:var(--grey-dark-color);
+}
+
+.pic{
+  width: 50px;
+  height: 50px; 
+  border-radius: 70%;
+  overflow: hidden;
+}
+main .main5{
+  display: flex;
+  align-items:center;
+  padding:var(--side-padding);
+  border-bottom:1px solid black;
+  color:var(--grey-dark-color);
+  list-style:none;
+}
+main .main5 .a{
+  flex-grow:0.5;
+}
+main .main5 .b{
+  flex-grow:9;
+  color:var(--black-color);
+}
+main .main5 .c{
+  flex-grow:0.5;
+}
+main .main5 .b .Youtuber{
+  font-size:var(--font-large);
+}
+main .main5 .b .SubS{
+  color:var(--grey-dark-color);
+}
+
+.upNext{
+  padding:var(--side-padding);
+}
+.upNext > .title{
+  font-size:var(--font-medium);
+  color:var(--grey-dark-color);
+  margin-bottom:calc(var(--side-padding)/2);
+}
+
+.upNext .item{
+  display: flex;
+  justify-content:space-between;
+}
+.upNext .item img{
+  width:200px;
+  height:150px;
+  padding-right:10px;
+  padding-top:10px;
+  padding-left:2px;
+  flex: 1 1 30%;
+}
+.upNext .item .info{
+  flex: 1 1 65%;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
+  margin-left:2px;
+}
+.upNext .item .title{
+  margin-top:8px;
+  margin-left:2px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.upNext .item .info .name{
+  font-size:var(--font-medium);
+  color:var(--grey-light-color);
+}
+.upNext .item .info .view{
+  font-size:var(--font-small);
+  color:var(--grey-light-color);
+}
+.upNext .item .moreBtn{
+  flex: 1 1 5%;
+  height:100%;
+  margin-top:17px;
+}
+
+@media(min-width:800px){
+  #To{
+    display:flex;
+    padding:var(--side-padding);
+  }
+  main{
+    flex-basis:50%;
+  }
+  main .main4 .icons{
+    display: flex;
+    justify-content:space-between;
+  }
+  .upNext{
+    flex-basis:50%;
+  }
+}

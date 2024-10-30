@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@700&display=swap");
+
+#login-form {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#login-form h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 150px;
+  margin-bottom: 60px;
+  width: 660px;
+  text-align: center;
+  flex-wrap: nowrap;
+  margin-bottom: 0px;
+}
+
+#login-form #myName {
+  color: transparent;
+  -webkit-text-stroke: var(--primary-color) 2px;
+  margin-bottom: 30px;
+  white-space: nowrap;
+  font-family: "Raleway", sans-serif;
+}
+
+#login-form #inputValue {
+  box-sizing: border-box;
+  width: 400px;
+  height: 50px;
+  padding: 13px 10px 10px;
+  background-color: transparent;
+  font-size: 25px;
+  text-align: center;
+  border-width: 0;
+  border-bottom: 2px solid var(--primary-color);
+}
+#inputValue:focus {
+  outline: none;
+}
+
+#login-form #inputBtn {
+  font-size: 25px;
+  width: 400px;
+  height: 60px;
+  background-color: #87cefa;
+  border-radius: 10px;
+  color: var(--white-color);
+  border-width: 0px;
+  margin-top: 30px;
+}
+
+#inputBtn2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+  width: 500px;
+  height: 85px;
+
+  background-color: #87cefa;
+  border-radius: 10px;
+  color: var(--white-color);
+  border-width: 0px;
+  margin-top: 30px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.IfUNBig {
+  font-size: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
