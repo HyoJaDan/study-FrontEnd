@@ -3,3 +3,4 @@
 
 # 특정 폴더 무시
 node_modules/
+.DS_Store
