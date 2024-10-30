@@ -19,4 +19,4 @@
 - **6.remix**: Remix 프레임워크를 사용한 ToDo 앱 구현.
 
 ### 3. React Native
-- **3.React_Native**: React Native를 사용하여 모바일 앱 개발을 학습한 프로젝트로, 간단한 카테고리와 상세 페이지 구현.
+- React Native를 사용하여 모바일 앱 개발을 학습한 프로젝트로, 간단한 카테고리와 상세 페이지 구현.
